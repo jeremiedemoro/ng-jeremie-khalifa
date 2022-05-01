@@ -1,0 +1,53 @@
+<app-header-other-nav [titleHeader]="titleHeader"></app-header-other-nav>
+<main class="container about-container global-author-presentation"
+    [ngClass]="{hideOnSideNav:navBarVisibilityService.hideOnSideNav==true}">
+    <blockquote>
+        <p class="presentation">
+            Experienced Front-End & UI Developer in building web applications, writing code, interfaces and designing
+            for the web. Fast learner, with excellent analytical skills, passionate about solving challenges and
+            learning new technologies.
+        </p>
+        <div class="presentation">
+            <span><span class="item-color">★</span> Client side technologies, frameworks, libraries, & concepts: </span>
+            <ul>
+                <li>Angular</li>
+                <li>JavaScript/TypeScript</li>
+                <li>Bootstrap/Angular Material</li>
+                <li>HTML, CSS/SASS</li>
+                <li>Git</li>
+            </ul>
+            <ul>
+                <li>Reusable Components</li>
+                <li>HTTP & Observable Services</li>
+                <li>Template Binding Syntax</li>
+                <li>Reactive Forms and Validators</li>
+                <li>Feature Modules & Routing</li>
+            </ul>
+            <ul>
+                <li>Responsive Web Design</li>
+                <li>UI Frameworks</li>
+                <li>UI Development</li>
+            </ul>
+        </div>
+        <div class="presentation">
+            <span><span class="item-color">★</span> Server side development technologies:</span>
+            <ul>
+                <li>NodeJS, Express, MongoDB</li>
+            </ul>
+        </div>
+        <div class="presentation">
+            <ul>
+                <li><span class="item-color">★</span> Experienced in building web apps from scratch.</li>
+                <li><span class="item-color">★</span> Experienced in building perfect pixel and fully responsive design
+                    pages from scratch.</li>
+                <li><span class="item-color">★</span> Ability to understand complex web applications.</li>
+                <li><span class="item-color">★</span> Experienced in working in Agile development environment.</li>
+                <li><span class="item-color">★</span> Ability to learn and use new technologies.</li>
+                <li><span class="item-color">★</span> Passionate.</li>
+                <li><span class="item-color">★</span> Team player.</li>
+            </ul>
+        </div>
+    </blockquote>
+    <input type="submit" class="home-btn" value="Home" (click)="goTo()">
+</main>
+<app-footer></app-footer>

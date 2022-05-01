@@ -1,0 +1,50 @@
+.article-content {
+    color: #fff
+}
+
+
+.global-block-cv {
+    position: relative;
+    background: white;
+    position: relative;
+    height: 250px;
+    color: black;
+    .global-article-presentation {
+        text-align: center;
+        padding-block-start: 35px;
+        h2 {
+            font-weight: 600;
+        }
+        div {
+            margin-block-end: 25px;
+        }
+        .cv-link {
+            margin-block-start: 25px;
+            color: #fff !important;
+            font-weight: 600;
+            background-color: #000;
+            border: 1px solid #000;
+            padding: 10px 55px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+            }
+        }
+    }
+    svg {
+        stroke: white;
+        fill: white;
+    }
+    .curveDown {
+        position: absolute;
+        bottom: -99px;
+    }
+    .curveUp {
+        position: absolute;
+        top: -99px;
+    }
+}
+
