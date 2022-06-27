@@ -2,7 +2,7 @@ import { ExperienceArticles, SkillsArticles } from '../interfaces/experience.mod
 
 export const EXPERIENCEARTICLES: ExperienceArticles[] = [
     {
-        fa: '', company: 'Pivotal Solution Ltd.', title: 'Front-End (Angular) & UI Developer', date: '2019-Present', city: 'Jerusalem',
+        fa: '', company: 'Pivotal Solution Ltd.', title: 'Front-End (Angular) Developer', date: '2019-Present', city: 'Jerusalem',
         info: {
             about: [
                 "Pivotal Solutions Ltd. is a company specializing in web and mobile apps development."
@@ -16,10 +16,12 @@ export const EXPERIENCEARTICLES: ExperienceArticles[] = [
             responsabilities: [
                 "In charge of the whole UI development.",
                 "Use reusable components, observable services, reactive forms & template binding syntax.",
-                "Translate UX designs and wireframes into high quality code, pixel perfect & fully responsive."
+                "Transform UX designs and wireframes into high quality code, pixel perfect & fully responsive."
             ],
             technologies: [
-                "Angular, Javascript/TypeScript, HTML, CSS/SASS, Bootstrap/Angular Material, Node/Express, MongoDB, Git.",
+                "Angular, Javascript/TypeScript, HTML, CSS/SASS, Bootstrap/Angular Material.",
+                "Node/Express, MongoDB.",
+                "Git."
             ],
             environment: [
                 "Agile."
@@ -27,18 +29,19 @@ export const EXPERIENCEARTICLES: ExperienceArticles[] = [
         }
     },
     {
-        fa: '', company: 'Altria Ltd.', title: 'Front-End (Angular) & UI Developer', date: '2018-2019', city: 'Bet Shemesh',
+        fa: '', company: 'Altria Ltd.', title: 'Front-End (Vue) Developer', date: '2018-2019', city: 'Bet Shemesh',
         info: {
             about: [
                 "Altria Israel, Ltd. was an israeli subsidiary of Altria Group, a U.S. Fortune 200 company that owns the premier tobacco companies in the United States (Marlboro, Parliament etc)."
             ],
             projects: ["Verve - Web app to sell electronic cigarettes."],
             responsabilities: [
-                "Build from scratch a new platform using Angular and modern tools.",
+                "Build from scratch a new platform using Vue and modern tools.",
                 "Translate UX designs and wireframes into high quality code, pixel perfect & fully responsive."
             ],
             technologies: [
-                "Angular, Javascript/TypeScript, HTML, CSS/SASS, Bootstrap/Angular Material, Git.",
+                "Vue, Javascript/TypeScript, HTML, CSS/SASS, Bootstrap/Material/Vuetify.",
+                "Git."
             ],
             environment: [
                 "Agile."
@@ -56,11 +59,9 @@ export const EXPERIENCEARTICLES: ExperienceArticles[] = [
                 "Creation of websites, landing pages and many small projects for clients respecting all web standards."
             ],
             technologies: [
-                "JavaScript, jQuery, AJAX, JSON, HTML, CSS, Bootstrap, Git.",
+                "JavaScript, jQuery, AJAX, JSON, HTML, CSS/SASS, Bootstrap.",
+                "Git."
             ],
-            environment: [
-                "Agile."
-            ]
         }
     },
 ]
