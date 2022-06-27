@@ -1,73 +1,102 @@
 <app-header-other-nav [titleHeader]="titleHeader"></app-header-other-nav>
-<main class="container experience-container global-author-presentation"
-    [ngClass]="{hideOnSideNav:navBarVisibilityService.hideOnSideNav==true}">
-    <blockquote>
-        <p class="presentation">
-            These few years of work are just the beginning. <br>
-            But for the moment and after having worked on different projects, here is my career.
-        </p>
-    </blockquote>
-    <section class="global-time-line-presentation global-time-experience">
-        <article class="article-time-line" *ngFor="let article of experienceArticles">
-            <div class="article-presentation">
-                <div class="article-company-status">{{article.company}} - <span
-                        class="item-color">{{article.title}}</span></div>
-                <div class="article-company-date"><span class="item-color">{{article.date}}</span>, {{article.city}}
-                </div>
+<main
+  class="container experience-container global-author-presentation"
+  [ngClass]="{ hideOnSideNav: navBarVisibilityService.hideOnSideNav == true }"
+>
+  <blockquote>
+    <p class="presentation">
+      These few years of work are just the beginning. <br />
+      But for the moment and after having worked on different projects, here is
+      my career.
+    </p>
+  </blockquote>
+  <section class="global-time-line-presentation global-time-experience">
+    <article
+      class="article-time-line"
+      *ngFor="let article of experienceArticles"
+    >
+      <div class="article-presentation">
+        <div class="article-company-status">
+          {{ article.company }} -
+          <span class="item-color">{{ article.title }}</span>
+        </div>
+        <div class="article-company-date">
+          <span class="item-color">{{ article.date }}</span
+          >, {{ article.city }}
+        </div>
 
-                <section class="company-info-projects">
-                    <div class="title">
-                        <span class="item-color">About:</span>
-                    </div>
-                    <div class="about" *ngFor="let about of article.info.about">{{about}}</div>
-                </section>
+        <section class="company-info-projects">
+          <div class="title">
+            <span class="item-color">About:</span>
+          </div>
+          <div class="about" *ngFor="let about of article.info.about">
+            {{ about }}
+          </div>
+        </section>
 
-                <section class="company-info-projects">
-                    <div class="title">
-                        <span class="item-color">Projects:</span>
-                    </div>
-                    <div class="project" *ngFor="let project of article.info.projects">{{project}}</div>
-                </section>
+        <section class="company-info-projects">
+          <div class="title">
+            <span class="item-color">Projects:</span>
+          </div>
+          <div class="project" *ngFor="let project of article.info.projects">
+            {{ project }}
+          </div>
+        </section>
 
-                <section class="company-info-responsabilities">
-                    <div class="title">
-                        <span class="item-color">Responsabilities:</span>
-                    </div>
-                    <div class="responsabilities" *ngFor="let responsability of article.info.responsabilities">
-                        {{responsability}}</div>
-                </section>
+        <section class="company-info-responsabilities">
+          <div class="title">
+            <span class="item-color">Responsabilities:</span>
+          </div>
+          <div
+            class="responsabilities"
+            *ngFor="let responsability of article.info.responsabilities"
+          >
+            {{ responsability }}
+          </div>
+        </section>
 
-                <section class="company-info-technologies">
-                    <div class="title">
-                        <span class="item-color">Technologies:</span>
-                    </div>
-                    <div class="technologies" *ngFor="let technology of article.info.technologies">{{technology}}</div>
-                </section>
+        <section class="company-info-technologies">
+          <div class="title">
+            <span class="item-color">Technologies:</span>
+          </div>
+          <div
+            class="technologies"
+            *ngFor="let technology of article.info.technologies"
+          >
+            {{ technology }}
+          </div>
+        </section>
 
-                <section class="company-info-environment">
-                    <div class="title">
-                        <span class="item-color">Environment:</span>
-                    </div>
-                    <div class="environment" *ngFor="let environment of article.info.environment">{{environment}}</div>
-                </section>
-
-            </div>
-        </article>
-    </section>
-    <h2 class="under-section-title"><span class="custom-mark">Skills</span></h2>
-    <section class="global-programming-languages-knowledge-presentation">
-        <div class="global-article-knowledge-presentation">
-            <article class="article-card" *ngFor="let article of skillsArticles">
-                <figcaption>
-                    <div class="article-icon"><i class="{{article.fa}}"></i></div>
-                    <div class="article-title-link"><span class="custom-mark">{{article.title}}</span></div>
-                    <!-- <div class="read-more-button">
+        <section class="company-info-environment">
+          <div class="title">
+            <span class="item-color">Environment:</span>
+          </div>
+          <div
+            class="environment"
+            *ngFor="let environment of article.info.environment"
+          >
+            {{ environment }}
+          </div>
+        </section>
+      </div>
+    </article>
+  </section>
+  <h2 class="under-section-title"><span class="custom-mark">Skills</span></h2>
+  <section class="global-programming-languages-knowledge-presentation">
+    <div class="global-article-knowledge-presentation">
+      <article class="article-card" *ngFor="let article of skillsArticles">
+        <figcaption>
+          <div class="article-icon"><i class="{{ article.fa }}"></i></div>
+          <div class="article-title-link">
+            <span class="custom-mark">{{ article.title }}</span>
+          </div>
+          <!-- <div class="read-more-button">
                         <a>Read more</a>
                     </div> -->
-                </figcaption>
-            </article>
-        </div>
-    </section>
-    <input type="submit" class="home-btn" value="Home" (click)="goTo()">
+        </figcaption>
+      </article>
+    </div>
+  </section>
+  <input type="submit" class="home-btn" value="Home" (click)="goTo()" />
 </main>
 <app-footer></app-footer>

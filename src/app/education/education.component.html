@@ -1,24 +1,36 @@
 <app-header-other-nav [titleHeader]="titleHeader"></app-header-other-nav>
-<main class="container education-container global-author-presentation"
-    [ngClass]="{hideOnSideNav:navBarVisibilityService.hideOnSideNav==true}">
-    <blockquote>
-        <p class="presentation">
-            Graduated from Paul Sabatier University (Toulouse, France) in Digital Creation & Web Programming, <br>
-            I also received my Full-Stack Developer certificate from John Bryce. <br>
-            I'm specialized in Front End & UI development because of my love for web design, but I also have knowledge in Back End development.
-        </p>
-        
-    </blockquote>
-    <section class="global-time-line-presentation">
-        <article class="article-time-line" *ngFor="let article of educationArticles">
-            <div class="article-presentation">
-                <div class="article-status">{{article.status}}, <span class="item-color">{{article.subject}}</span>
-                </div>
-                <div class="article-school-city"><span class="item-color">{{article.school}}</span>, {{article.city}}</div>
-                <div class="article-year">{{article.year}}</div>
-            </div>
-        </article>
-    </section>
-    <input type="submit" class="home-btn" value="Home" (click)="goTo()">
+<main
+  class="container education-container global-author-presentation"
+  [ngClass]="{ hideOnSideNav: navBarVisibilityService.hideOnSideNav == true }"
+>
+  <blockquote>
+    <p class="presentation">
+      Graduated from Paul Sabatier University (Toulouse, France) in Digital
+      Creation & Web Programming, <br />
+      I also received my Full-Stack Developer certificate from John Bryce.
+      <br />
+      I'm specialized in Front End & UI development because of my love for web
+      design, but I also have knowledge in Back End development.
+    </p>
+  </blockquote>
+  <section class="global-time-line-presentation">
+    <article
+      class="article-time-line"
+      *ngFor="let article of educationArticles"
+    >
+      <div class="article-presentation">
+        <div class="article-status">
+          {{ article.status }},
+          <span class="item-color">{{ article.subject }}</span>
+        </div>
+        <div class="article-school-city">
+          <span class="item-color">{{ article.school }}</span
+          >, {{ article.city }}
+        </div>
+        <div class="article-year">{{ article.year }}</div>
+      </div>
+    </article>
+  </section>
+  <input type="submit" class="home-btn" value="Home" (click)="goTo()" />
 </main>
 <app-footer></app-footer>

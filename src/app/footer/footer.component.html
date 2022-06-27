@@ -1,29 +1,41 @@
 <footer class="container footer-site">
-    <section class="global-footer-presentation" [ngClass]="{hideOnSideNav:navBarVisibilityService.hideOnSideNav==true}">
-        <hr class="separation-line">
-        <h2 class="thanks"><span class="custom-mark">Thanks</span><span class="item-color">.</span></h2>
-        <p>
-            Thank you for visiting my app.<br>
-            If you want to get in touch, please <a class="read-more" routerLink="/contact">send me a message</a>, or
-            directly an
-            <a href="mailto:khalifa.jeremie@gmail.com" class="read-more">an email</a>.
-        </p>
-        <div class="social-links">
-            <a class="social-link linkedin" *ngFor="let socialLink of socialLinks">
-                <strong>{{socialLink.title}}</strong>
-                <a href="{{socialLink.link}}" target="_blank">{{socialLink.linkName}}</a>
-            </a>
-        </div>
-        <div class="short-about">
-            <div class="explanations">
-                I'm an experienced Front-End & UI Developer in building web applications, writing code, interfaces and
-                designing for the web.
-                Passionated about the web since always, I like to share my skills and my discoveries with people who
-                have this same passion for the web.
-            </div>
-            <div class="logo">
-                <img src="../../assets//img/logo/gradient-logo.svg" alt="Website Logo" width="300px">
-            </div>
-        </div>
-    </section>
+  <section
+    class="global-footer-presentation"
+    [ngClass]="{ hideOnSideNav: navBarVisibilityService.hideOnSideNav == true }"
+  >
+    <hr class="separation-line" />
+    <h2 class="thanks">
+      <span class="custom-mark">Thanks</span><span class="item-color">.</span>
+    </h2>
+    <p>
+      Thank you for visiting my app.<br />
+      If you want to get in touch, please
+      <a class="read-more" routerLink="/contact">send me a message</a>, or
+      directly an
+      <a href="mailto:khalifa.jeremie@gmail.com" class="read-more">an email</a>.
+    </p>
+    <div class="social-links">
+      <a class="social-link linkedin" *ngFor="let socialLink of socialLinks">
+        <strong>{{ socialLink.title }}</strong>
+        <a href="{{ socialLink.link }}" target="_blank">{{
+          socialLink.linkName
+        }}</a>
+      </a>
+    </div>
+    <div class="short-about">
+      <div class="explanations">
+        I'm an experienced Front-End & UI Developer in building web
+        applications, writing code, interfaces and designing for the web.
+        Passionated about the web since always, I like to share my skills and my
+        discoveries with people who have this same passion for the web.
+      </div>
+      <div class="logo">
+        <img
+          src="../../assets//img/logo/gradient-logo.svg"
+          alt="Website Logo"
+          width="300px"
+        />
+      </div>
+    </div>
+  </section>
 </footer>

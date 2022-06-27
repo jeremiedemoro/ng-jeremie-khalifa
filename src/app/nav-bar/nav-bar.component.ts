@@ -1,17 +1,17 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
-import { NavBarVisibilityService } from '../services/nav-bar-visibility.service';
-import { TOPNAV } from '../mock-info/nav-bar'
-import { SIDENAV } from '../mock-info/nav-bar'
-import { ThemeService } from '../theme/theme.service';
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
+import { Router } from "@angular/router";
+import { NavBarVisibilityService } from "../services/nav-bar-visibility.service";
+import { TOPNAV } from "../mock-info/nav-bar";
+import { SIDENAV } from "../mock-info/nav-bar";
+import { ThemeService } from "../theme/theme.service";
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss'],
+  selector: "app-nav-bar",
+  templateUrl: "./nav-bar.component.html",
+  styleUrls: ["./nav-bar.component.scss"],
   host: {
-    "(window:click)": "closeFromOutside()"
-  }
+    "(window:click)": "closeFromOutside()",
+  },
 })
 export class NavBarComponent implements OnInit {
   topNavLinks = TOPNAV;
@@ -24,10 +24,9 @@ export class NavBarComponent implements OnInit {
     private router: Router,
     private navBarVisibilityService: NavBarVisibilityService,
     private themeService: ThemeService
-  ) { }
+  ) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   statusSideNav($event) {
     $event.stopPropagation();
@@ -49,10 +48,10 @@ export class NavBarComponent implements OnInit {
       this.sideNavToggle = false;
       this.navBarVisibilityService.hideOnSideNav = false;
     }
-    this.router.navigate(['/' + url]);
-  } 
+    this.router.navigate(["/" + url]);
+  }
 
   statusTheme() {
-    this.themeService.toggleTheme()
+    this.themeService.toggleTheme();
   }
 }

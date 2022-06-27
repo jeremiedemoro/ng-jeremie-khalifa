@@ -1,10 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { NavBarVisibilityService } from '../services/nav-bar-visibility.service';
+import { Component, OnInit, Input } from "@angular/core";
+import { NavBarVisibilityService } from "../services/nav-bar-visibility.service";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
   @Input() titleHeader: string;
@@ -13,9 +13,7 @@ export class HeaderComponent implements OnInit {
   @Input() subtitleHeader: string;
   @Input() presentationHeader: string;
 
-  constructor(private navBarVisibilityService: NavBarVisibilityService) { }
+  constructor(private navBarVisibilityService: NavBarVisibilityService) {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
