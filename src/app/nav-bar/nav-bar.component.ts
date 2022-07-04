@@ -18,7 +18,7 @@ export class NavBarComponent implements OnInit {
   sideNavLinks = SIDENAV;
   sideNavToggle: boolean;
   themeBtnToggle: boolean;
-  setDark;
+  statusTopNavLink: any;
 
   constructor(
     private router: Router,

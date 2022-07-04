@@ -1,8 +1,6 @@
 <app-header-other-nav [titleHeader]="titleHeader"></app-header-other-nav>
-<main
-  class="container experience-container global-author-presentation"
-  [ngClass]="{ hideOnSideNav: navBarVisibilityService.hideOnSideNav == true }"
->
+<main class="container experience-container global-author-presentation"
+  [ngClass]="{ hideOnSideNav: navBarVisibilityService.hideOnSideNav == true }">
   <blockquote>
     <p class="presentation">
       These few years of work are just the beginning. <br />
@@ -10,18 +8,14 @@
     </p>
   </blockquote>
   <section class="global-time-line-presentation global-time-experience">
-    <article
-      class="article-time-line"
-      *ngFor="let article of experienceArticles"
-    >
+    <article class="article-time-line" *ngFor="let article of experienceArticles">
       <div class="article-presentation">
         <div class="article-company-status">
           {{ article.company }} -
           <span class="item-color">{{ article.title }}</span>
         </div>
         <div class="article-company-date">
-          <span class="item-color">{{ article.date }}</span
-          >, {{ article.city }}
+          <span class="item-color">{{ article.date }}</span>, {{ article.city }}
         </div>
 
         <section class="company-info-projects">
@@ -46,10 +40,7 @@
           <div class="title">
             <span class="item-color">Responsabilities:</span>
           </div>
-          <div
-            class="responsabilities"
-            *ngFor="let responsability of article.info.responsabilities"
-          >
+          <div class="responsabilities" *ngFor="let responsability of article.info.responsabilities">
             {{ responsability }}
           </div>
         </section>
@@ -58,10 +49,7 @@
           <div class="title">
             <span class="item-color">Technologies:</span>
           </div>
-          <div
-            class="technologies"
-            *ngFor="let technology of article.info.technologies"
-          >
+          <div class="technologies" *ngFor="let technology of article.info.technologies">
             {{ technology }}
           </div>
         </section>
@@ -70,10 +58,7 @@
           <div class="title">
             <span class="item-color">Environment:</span>
           </div>
-          <div
-            class="environment"
-            *ngFor="let environment of article.info.environment"
-          >
+          <div class="environment" *ngFor="let environment of article.info.environment">
             {{ environment }}
           </div>
         </section>
